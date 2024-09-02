@@ -19,6 +19,7 @@ def predict_price(features):
     return prediction[0]
 
 st.title("Housing Price Prediction")
+st.write("Francisco Uriel Olivas Márquez 341948")
 st.write("### Input Data")
 col1, col2 = st.columns(2)
 # Inputs
