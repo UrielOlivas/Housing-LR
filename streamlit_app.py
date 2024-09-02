@@ -22,14 +22,14 @@ st.title("Housing Price Prediction")
 st.write("### Input Data")
 col1, col2 = st.columns(2)
 # Inputs
-longitude = col1.number_input("Longitude", min_value=-180.0, max_value=180.0, value=0.0)
-latitude = col1.number_input("Latitude", min_value=0.0, max_value=90.0, value=0.0)
-housing_median_age = col2.number_input("Housing Median Age", min_value=0.0, max_value=100.0, value=0.0)
-total_rooms = col2.number_input("Total Rooms", min_value=0.0, value=0.0)
-total_bedrooms = col1.number_input("Total Bedrooms", min_value=0.0, value=0.0)
-population = col1.number_input("Population", min_value=0.0, value=0.0)
-households = col2.number_input("Households", min_value=0.0, value=0.0)
-median_income = col2.number_input("Median Income", min_value=0.0, value=0.0)
+longitude = col1.number_input("Longitude", min_value=-180.0, max_value=180.0, value=-122.23)
+latitude = col1.number_input("Latitude", min_value=0.0, max_value=90.0, value=37.88)
+housing_median_age = col2.number_input("Housing Median Age", min_value=0.0, max_value=100.0, value=41.0)
+total_rooms = col2.number_input("Total Rooms", min_value=0.0, value=880.0)
+total_bedrooms = col1.number_input("Total Bedrooms", min_value=0.0, value=129.0)
+population = col1.number_input("Population", min_value=0.0, value=322.0)
+households = col2.number_input("Households", min_value=0.0, value=126.0)
+median_income = col2.number_input("Median Income", min_value=0.0, value=8.3252)
 ocean_proximity = st.selectbox(
     "Ocean Proximity",
     ["<1H OCEAN", "INLAND", "ISLAND", "NEAR BAY", "NEAR OCEAN"]
